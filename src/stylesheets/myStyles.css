@@ -1,0 +1,10 @@
+.makeRight{
+    text-align: right;
+    font-size: x-large;
+    color:indigo;
+    background-color: peachpuff;
+}
+
+.makeCenter{  
+    color: maroon;
+}
