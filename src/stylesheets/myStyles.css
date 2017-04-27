@@ -8,3 +8,19 @@
 .makeCenter{  
     color: maroon;
 }
+
+.header{
+min-height:80px;
+width:100%;
+color:blue;
+background:#94618e;
+
+}
+
+body{
+
+    background:#f4decb
+}
+.width-300{
+    width:300px;
+}

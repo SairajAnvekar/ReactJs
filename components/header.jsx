@@ -10,12 +10,8 @@ export default class Header extends React.Component{
     }
     render(){
         return (
-        <div>
-            <header className="makeCenter">
-                 <Title title={this.props.title}/>
-            </header>
-            <input type="text" value={this.props.title} 
-            onChange ={this.handleChange.bind(this)}/>
+        <div  class="header" >
+                       {this.props.children}
         </div>
         )
     }
