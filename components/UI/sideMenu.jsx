@@ -15,7 +15,7 @@ export default class SideMenu extends React.Component{
                 <ul id="slide-out" class="side-nav">                
                  {this.props.children}
                 </ul>
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu j</i></a>        
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu </i></a>        
             </div>
 
         )

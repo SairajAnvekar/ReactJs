@@ -4,6 +4,8 @@ import Footer from "./footer.jsx";
 import Product from "./products/product.jsx";
 import SideMenu from "./UI/sideMenu.jsx";
 import Products from "../pages/Products";
+import store from "../store"
+import {Provider} from 'react-redux';
 
 export default class Layout extends React.Component{  
     constructor(){
@@ -30,7 +32,9 @@ export default class Layout extends React.Component{
                </Header>                                     
                
                  <div> 
-                      <Products/>                  
+                      <Provider store={store}>
+                       <Products/>   
+                      </Provider>             
                  </div>
 
 
