@@ -6,6 +6,8 @@ import SideMenu from "./UI/sideMenu.jsx";
 import Products from "../pages/Products";
 import store from "../store"
 import {Provider} from 'react-redux';
+import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
 export default class Layout extends React.Component{  
     constructor(){
@@ -26,22 +28,17 @@ export default class Layout extends React.Component{
                     <li><a href="#!">Second Link</a></li>
                     <li><div class="divider"></div></li>                
                     <li><a class="waves-effect" href="#!">All Collection</a></li>
-                    <li><a class="waves-effect" href="#!">Bangel</a></li>
+                    <li><a class="waves-effect" href="#!">Bangeldd</a></li>
                     <li><a class="waves-effect" href="#!">Bangel2</a></li>    
                  </SideMenu>  
                </Header>                                     
-               
-                 <div> 
-                      <Provider store={store}>
-                       <Products/>   
-                      </Provider>             
-                 </div>
-
-
-
-
-
-             
+        <ul>
+<li><Link to="/">Home</Link></li>
+<li><Link to="/about">About</Link></li>
+<li><Link to="/topics">Topics</Link></li>
+</ul>
+                  
+               {this.props.children}
             </div>
         ) 
     }
